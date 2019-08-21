@@ -94,28 +94,22 @@ body {
 }
 
 #Sales::before {
-    background-image: url(../images/Sales.svg);
+    background-image: url(../images/klinik.png);
 }
 
 #list::before {
-    background-image: url(../images/list.png);
+    background-image: url(../images/zonk.png);
 }
 
 #shops::before {
-    background-image: url(../images/shops.png);
-}
-
-#bbq::before {
-    background-image: url(../images/bbq.png);
+    background-image: url(../images/Handy.png);
 }
 
 #more::before {
-    background-image: url(../images/more.png);
+    background-image: url(../images/pillen.png);
 }
 
-#more_Active::before {
-    background-image: url(../images/more_active.svg);
-}
+
 
 
 
@@ -165,23 +159,19 @@ body {
     }
 
     #Sales {
-        background-image: url(../images/Sales.svg);
+        background-image: url(../images/klinik.png);
     }
     
     #list {
-        background-image: url(../images/list.png);
+        background-image: url(../images/zonk.png);
     }
     
     #shops {
-        background-image: url(../images/shops.png);
-    }
-    
-    #bbq {
-        background-image: url(../images/bbq.png);
+        background-image: url(../images/Handy.png);
     }
     
     #more {
-        background-image: url(../images/more.png);
+        background-image: url(../images/pillen.png);
     }
 
 
