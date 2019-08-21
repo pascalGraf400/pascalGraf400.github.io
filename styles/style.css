@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(../images/background.jpg);
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+#content {
+    width: auto;
+    padding: 45px 10px 30px;
+    color: #000;
+}
+
+#contentWithTopMenu {
+    width: auto;
+    padding: 20px 10px 30px;
+    color: #000;
+}
+
+#content h1 {
+    margin-top:0;
+    padding-top: 0; 
+}
+
+#topMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    color: #000;
+}
+
+#backArrow {
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.topMenuLink {
+    color: blue;
+    text-decoration: none;
+}
+
+.topMenuHl {
+    text-align: center;
+    display: block;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+#navigation {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    bottom: 0;
+    left:0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+.icon {
+    min-width: 17%;
+    padding: 0;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    margin: 0;
+}
+
+.icon::before {
+    content: "";
+    display: block;
+    padding-top:60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:auto 100%; 
+}
+
+#Sales::before {
+    background-image: url(../images/Sales.svg);
+}
+
+#list::before {
+    background-image: url(../images/list.png);
+}
+
+#shops::before {
+    background-image: url(../images/shops.png);
+}
+
+#bbq::before {
+    background-image: url(../images/bbq.png);
+}
+
+#more::before {
+    background-image: url(../images/more.png);
+}
+
+#more_Active::before {
+    background-image: url(../images/more_active.svg);
+}
+
+
+
+#logo {
+    background-image:url(../images/logo.svg);
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    display: block;
+}
+
+.moreLink {
+    display: block;
+    width: auto;
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+@media only screen and (max-width:400px) {
+    #list::before {
+        background-position: center 8px;
+        background-size: 50% auto;
+    }
+}
+@media only screen and (min-width:601px) {
+    #navigation {
+        max-height: 90px;
+    }
+    .icon {
+        height: 20px;
+        padding-top: 60px;
+        min-width: none;
+        width: auto;
+        background-position: center top;
+        background-size: auto 50%;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+    }
+
+    #Sales {
+        background-image: url(../images/Sales.svg);
+    }
+    
+    #list {
+        background-image: url(../images/list.png);
+    }
+    
+    #shops {
+        background-image: url(../images/shops.png);
+    }
+    
+    #bbq {
+        background-image: url(../images/bbq.png);
+    }
+    
+    #more {
+        background-image: url(../images/more.png);
+    }
+
+
+    .icon::before {
+        padding-top: 0;
+    }
+}
